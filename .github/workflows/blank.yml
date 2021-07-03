@@ -37,13 +37,13 @@ jobs:
 
       # Runs
       - name: Run docker build
-        run: docker build -t my-app:latest .
+        run: |
+          docker build -t my-app:latest .
+          docker push dummyappp.jfrog.io/dummy-appp-docker
         
       # Runs
       - name: Run docker images
-        run: |
-          docker images
-          docker push dummyappp.jfrog.io/dummy-appp-docker
+        run: docker images
 
       # Ls
       - name: Run ls command
