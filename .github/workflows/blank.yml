@@ -43,6 +43,6 @@ jobs:
       - name: Run docker images
         run: docker images
 
-# Push
-      - name: Push docker images
-        run: docker push my-app
+      # Install JFrog CLI
+      - name: Install JFrog CLI
+        run: curl -fL https://getcli.jfrog.io | sh
