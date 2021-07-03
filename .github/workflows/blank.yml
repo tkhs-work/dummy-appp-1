@@ -45,4 +45,4 @@ jobs:
 
 # Push
       - name: Push docker images
-        run: docker push my-app dummyappp.jfrog.io/dummy-appp-docker
+        run: docker push my-app
