@@ -53,4 +53,4 @@ jobs:
         
       # Push
       - name: Push Artifactory
-        run: ./jfrog rt u dummy-appp-docker/my-app
+        run: ./jfrog rt u my-app dummy-appp-docker/my-app
