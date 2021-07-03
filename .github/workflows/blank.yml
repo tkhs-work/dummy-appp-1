@@ -41,7 +41,9 @@ jobs:
         
       # Runs
       - name: Run docker images
-        run: docker images
+        run: |
+          docker images
+          docker push dummyappp.jfrog.io/dummy-appp-docker
 
       # Ls
       - name: Run ls command
