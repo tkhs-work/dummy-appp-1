@@ -45,7 +45,7 @@ jobs:
 
       # Ls
       - name: Run ls command
-        run: ls
+        run: ls -ltr
 
 # Push
       - name: Push docker images
