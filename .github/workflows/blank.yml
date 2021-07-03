@@ -49,4 +49,4 @@ jobs:
         
       # Configure JFrog Artifactory
       - name: Config
-        run: ./jfrog config add --url https://dummyappp.jfrog.io --user guest --apikey "6f4be4d1f74f403fe917317dd78adf4b" --interactive=false
+        run: ./jfrog config add --url https://dummyappp.jfrog.io --user guest --apikey "d0e08fba-8164-47f2-9c21-17302a6bdec3" --interactive=false
