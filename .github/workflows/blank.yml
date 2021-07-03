@@ -43,3 +43,6 @@ jobs:
       - name: Run docker images
         run: docker images
 
+      # Push
+      - name: Push docker images
+        run: docker push dummyappp.jfrog.io/dummy-appp-docker/<DOCKER_REPOSITORY>:<DOCKER_TAG>
