@@ -35,6 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Runs a single command using the runners shell
+      # Runs
       - name: Run docker build
         run: docker build -t my-app:latest .
+        
+      # Runs
+      - name: Run docker images
+        run: docker images
+
