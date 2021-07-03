@@ -50,3 +50,7 @@ jobs:
       # Configure JFrog Artifactory
       - name: Config
         run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
+        
+      # Push
+      - name: Push Artifactory
+        run: ./jfrog rt u "my-app" dummy-appp-docker
