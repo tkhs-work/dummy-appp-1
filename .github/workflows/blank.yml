@@ -46,3 +46,7 @@ jobs:
       # Install JFrog CLI
       - name: Install JFrog CLI
         run: curl -fL https://getcli.jfrog.io | sh
+        
+      # Configure JFrog
+      - name: Configure JFrog
+       run: ./jfrog rt config --url https://dummyappp.jfrog.io --user tetsuhiko.takahashi.zp@hitachi.com --apikey $ARTIFACTORY_APIKEY --interactive=false
