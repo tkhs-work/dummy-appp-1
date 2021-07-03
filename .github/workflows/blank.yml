@@ -49,4 +49,4 @@ jobs:
         
       # Configure JFrog
       - name: Configure JFrog
-       run: ./jfrog rt config --url https://dummyappp.jfrog.io --user tetsuhiko.takahashi.zp@hitachi.com --apikey $ARTIFACTORY_APIKEY --interactive=false
+       run: ./jfrog rt config --url https://dummyappp.jfrog.io --user tetsuhiko.takahashi.zp@hitachi.com --apikey 6f4be4d1f74f403fe917317dd78adf4b --interactive=false
