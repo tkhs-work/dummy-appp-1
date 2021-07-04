@@ -44,18 +44,18 @@ jobs:
         run: docker images
 
       # Install JFrog CLI
-      - name: Install JFrog CLI
-        run: curl -fL https://getcli.jfrog.io | sh
+      #- name: Install JFrog CLI
+      #  run: curl -fL https://getcli.jfrog.io | sh
         
       # Configure JFrog Artifactory
-      - name: Config
-        run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
+      #- name: Config
+      #  run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
        
       # Push
       - name: Push Artifactory
         # run: ./jfrog rt u my-app dummy-appp-docker
         # run: curl -v --user tetsuhiko.takahashi.zp@hitachi.com:Nttdata1! --data-binary my-app -X PUT "https://dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/"
         run: |
-          docker login dummyappp.jfrog.io
+          docker login tetsuhiko.takahashi.zp@hitachi.com Nttdata1! dummyappp.jfrog.io
           #docker tag my-app dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
           #docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
