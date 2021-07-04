@@ -51,6 +51,11 @@ jobs:
       #- name: Config
       #  run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
         
+      # Confirm
+      - name: Confirm
+        run: |
+          ls -ltr /var/lib/docker
+        
       # Push
       - name: Push Artifactory
         # run: ./jfrog rt u my-app dummy-appp-docker
