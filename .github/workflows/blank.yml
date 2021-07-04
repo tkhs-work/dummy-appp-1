@@ -49,7 +49,7 @@ jobs:
         
       # Configure JFrog Artifactory
       - name: Config
-        run: ./jfrog rt config --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
+        run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
        
       # Push
       - name: Push Artifactory
