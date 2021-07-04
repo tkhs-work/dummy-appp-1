@@ -56,6 +56,5 @@ jobs:
         # run: ./jfrog rt u my-app dummy-appp-docker
         # run: curl -v --user tetsuhiko.takahashi.zp@hitachi.com:Nttdata1! --data-binary my-app -X PUT "https://dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/"
         run: |
-          docker login dummyappp.jfrog.io/artifactory/dummy-appp-docker-local
-          #docker tag my-app dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
-          #docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
+          docker tag my-app dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
+          docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
