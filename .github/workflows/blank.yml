@@ -53,4 +53,5 @@ jobs:
         
       # Push
       - name: Push Artifactory
-        run: ./jfrog rt u my-app dummy-appp-docker
+        # run: ./jfrog rt u my-app dummy-appp-docker
+        run: curl -v --user tetsuhiko.takahashi.zp@hitachi.com:Nttdata1! --data-binary my-app -X PUT "https://dummyappp.jfrog.io/artifactory/dummy-appp-docker/"
