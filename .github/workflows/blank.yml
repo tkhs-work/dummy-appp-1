@@ -63,4 +63,4 @@ jobs:
         run: |
         #  docker tag my-app dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
          docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest
-         docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local
+        # docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local
