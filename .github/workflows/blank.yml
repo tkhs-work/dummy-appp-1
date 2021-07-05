@@ -67,6 +67,10 @@ jobs:
 
       # Runs
       - name: Run docker build
+        run: docker login -u tetsuhiko.takahashi.zp@hitachi.com -p Nttdata1! dummyappp.jfrog.io
+        
+      # Runs
+      - name: Run docker build
         run: docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest .
         # run: docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest .
 
