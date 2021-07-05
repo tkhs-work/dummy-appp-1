@@ -53,8 +53,8 @@ jobs:
       #  run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
        
       # Ping
-      - name: Ping
-        run: ./jfrog rt ping
+      #- name: Ping
+      #  run: ./jfrog rt ping
        
       # Push
       # - name: Push Artifactory
