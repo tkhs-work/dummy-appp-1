@@ -45,12 +45,12 @@ jobs:
         run: docker images
 
       # Install JFrog CLI
-      - name: Install JFrog CLI
-        run: curl -fL https://getcli.jfrog.io | sh
+      #- name: Install JFrog CLI
+      #  run: curl -fL https://getcli.jfrog.io | sh
         
       # Configure JFrog Artifactory
-      - name: Config
-        run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
+      #- name: Config
+      #  run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
        
       # Ping
       - name: Ping
@@ -66,7 +66,7 @@ jobs:
         # docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local
 
       # Runs
-      - name: Run docker build
+      - name: Run docker login
         run: docker login -u tetsuhiko.takahashi.zp@hitachi.com -p Nttdata1! dummyappp.jfrog.io
         
       # Runs
@@ -79,5 +79,5 @@ jobs:
         run: docker images
         
       # Runs
-      - name: Run docker build
+      - name: Run docker push
         run: docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest
