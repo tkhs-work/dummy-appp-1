@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
 
       # Runs
-      - name: Run docker build
+      #- name: Run docker build
         # run: docker build -t my-app:latest .
         # run: docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest .
         
