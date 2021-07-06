@@ -81,7 +81,4 @@ jobs:
       # Runs
       - name: Run docker push
         run: docker push dummyappp.jfrog.io/dummy-appp-docker-local/my-app:latest
-        
-      # Runs
-      - name: Run docker push
-        run: docker push centos:7
+
