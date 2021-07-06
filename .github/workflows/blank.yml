@@ -80,4 +80,4 @@ jobs:
         
       # Runs
       - name: Run docker push
-        run: docker push dummyappp.jfrog.io/dummy-appp-docker-local/
+        run: docker push dummyappp.jfrog.io/dummy-appp-docker-local
