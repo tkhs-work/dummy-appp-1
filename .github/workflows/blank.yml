@@ -71,7 +71,7 @@ jobs:
         
       # Runs
       - name: Run docker build
-        run: docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest .
+        run: docker build -t dummyappp.jfrog.io/dummy-appp-docker-local/my-app:latest .
         # run: docker build -t dummyappp.jfrog.io/dummy-appp-docker-local/my-app:latest .
 
       # Runs
