@@ -36,43 +36,12 @@ jobs:
           echo test, and deploy your project.
 
       # Runs
-      #- name: Run docker build
-        # run: docker build -t my-app:latest .
-        # run: docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest .
-        
-      # Runs
-      - name: Run docker images
-        run: docker images
-
-      # Install JFrog CLI
-      #- name: Install JFrog CLI
-      #  run: curl -fL https://getcli.jfrog.io | sh
-        
-      # Configure JFrog Artifactory
-      #- name: Config
-      #  run: ./jfrog config add --url https://dummyappp.jfrog.io --user "tetsuhiko.takahashi.zp@hitachi.com" --apikey "Nttdata1!" --interactive=false
-       
-      # Ping
-      #- name: Ping
-      #  run: ./jfrog rt ping
-       
-      # Push
-      # - name: Push Artifactory
-        # run: ./jfrog rt u my-app dummy-appp-docker
-        # run: curl -v --user tetsuhiko.takahashi.zp@hitachi.com:Nttdata1! --data-binary my-app -X PUT "https://dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/"
-        #run: |
-        #  docker tag my-app dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app
-        # docker build -t dummyappp.jfrog.io/artifactory/dummy-appp-docker-local/my-app:latest
-        # docker push dummyappp.jfrog.io/artifactory/dummy-appp-docker-local
-
-      # Runs
       - name: Run docker login
         run: docker login -u tetsuhiko.takahashi.zp@hitachi.com -p Nttdata1! dummyappp.jfrog.io
         
       # Runs
       - name: Run docker build
         run: docker build -t dummyappp.jfrog.io/dummy-appp-docker-local/my-app:latest .
-        # run: docker build -t dummyappp.jfrog.io/dummy-appp-docker-local/my-app:latest .
 
       # Runs
       - name: Run docker images
