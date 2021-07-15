@@ -5,6 +5,7 @@ FROM python:3.6
 
 COPY src/app.py .
 COPY src/requirements.txt .
+COPY src/static/style.css .
 
 RUN pip install --upgrade pip
 
